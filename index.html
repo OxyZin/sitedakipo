@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kipo, a Gata</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #ffe6cc;
+            color: #5d4037;
+        }
+        #topbar {
+            background-color: #ffcc80;
+            color: #5d4037;
+            text-align: center;
+            padding: 15px;
+            border-bottom: 3px solid #ffb74d;
+        }
+        #topbar h1 {
+            margin-bottom: 5px;
+        }
+        #topbar h6 {
+            font-size: 12px;
+            margin: 0;
+        }
+        h1, h2 {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+        .container img {
+            flex: 1 1 200px;
+            max-width: 200px;
+            height: auto;
+            border-radius: 10px;
+            margin: 10px;
+            border: 3px solid #ffb74d;
+        }
+        .container p {
+            flex: 2;
+            margin: 10px;
+            font-size: 18px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 10px;
+            padding: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            border-radius: 10px;
+            border: 2px solid #ffb74d;
+            transition: transform 0.2s;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+        ul {
+            list-style-type: none;
+            padding: 20px;
+            margin: auto;
+            max-width: 800px;
+        }
+        ul li {
+            background: #ffe6cc;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 10px;
+            border: 2px solid #ffb74d;
+        }
+        #contact {
+            text-align: center;
+            padding: 20px;
+        }
+        #contact input, #contact textarea {
+            width: 80%;
+            max-width: 400px;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        #contact button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #ff8a65;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #contact button:hover {
+            background-color: #ff7043;
+        }
+        footer {
+            background-color: #ffcc80;
+            color: #5d4037;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+            border-top: 3px solid #ffb74d;
+        }
+        .cat-icon {
+            font-size: 24px;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="topbar">
+        <h1>Site da Kipo! 😺</h1>
+        <h6>Copyright © Davi 2024</h6>
+    </div>
+
+    <h1>Conheça a Kipo</h1>
+    <div class="container">
+        <img src="kipo_1.jpg" alt="Foto de Kipo">
+        <p>Kipo é uma gata muito fofa que adora brincar e explorar a casa. Ela é a melhor amiga do Davi e promete ficar com ele pelo resto da vida!</p>
+    </div>
+    <div class="container">
+        <img src="kipo_2.jpg" alt="Foto de Kipo">
+        <p>Ela também ama tirar sonecas à tarde. Mas cuidado! Quando acordada do sono, ela pode ficar um pouco de mau humor (culpa do Davi!).</p>
+    </div>
+
+    <h2>Curiosidades 🐾</h2>
+    <ul>
+        <li>Kipo adora brincar com bolinhas de papel.</li>
+        <li>Ela ama carinho na cabeça, mas odeia que toquem na barriga.</li>
+        <li>Ela consegue abrir portas se estiverem entreabertas.</li>
+        <li>É especialista em roubar lugares quentinhos para dormir.</li>
+    </ul>
+
+    <h2>Galeria de Fotos 📸</h2>
+    <div class="gallery">
+        <img src="kipo_3.jpg" alt="Kipo na garagem">
+        <img src="kipo_4.jpg" alt="Kipo tentando dormir">
+        <img src="kipo_5.jpg" alt="Kipo mecânica">
+        <img src="kipo_6.jpg" alt="Kipo de lado (Tá linda nessa foto)">
+    </div>
+
+    <h2>Entre em Contato 📨</h2>
+    <div id="contact">
+        <p>Tem algo para compartilhar sobre a Kipo? Envie uma mensagem!</p>
+        <a href="https://www.instagram.com/kipo.a.gata">Acesse nosso Instagram!</a>
+    </div>
+
+    <footer>
+        <p>Obrigado por visitar o site da Kipo! 🐾</p>
+    </footer>
+</body>
+</html>
