@@ -11,22 +11,40 @@
             margin: 0;
             padding: 0;
             line-height: 1.6;
-            background-color: #ffe6cc;
-            color: #5d4037;
+            background-color: #fff3e6;
+            color: #4d2800;
         }
         #topbar {
-            background-color: #ffcc80;
-            color: #5d4037;
+            background-color: #ffdd99;
+            color: #4d2800;
             text-align: center;
             padding: 15px;
-            border-bottom: 3px solid #ffb74d;
+            border-bottom: 3px solid #ffa64d;
         }
         #topbar h1 {
             margin-bottom: 5px;
+            font-family: 'Brush Script MT', cursive;
         }
         #topbar h6 {
             font-size: 12px;
             margin: 0;
+        }
+        nav {
+            background-color: #ffdd99;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            border-bottom: 3px solid #ffa64d;
+        }
+        nav a {
+            color: #4d2800;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
         }
         h1, h2 {
             text-align: center;
@@ -44,9 +62,9 @@
             flex: 1 1 200px;
             max-width: 200px;
             height: auto;
-            border-radius: 10px;
+            border-radius: 15px;
             margin: 10px;
-            border: 3px solid #ffb74d;
+            border: 3px solid #ffa64d;
         }
         .container p {
             flex: 2;
@@ -61,8 +79,8 @@
         }
         .gallery img {
             width: 100%;
-            border-radius: 10px;
-            border: 2px solid #ffb74d;
+            border-radius: 15px;
+            border: 2px solid #ffa64d;
             transition: transform 0.2s;
         }
         .gallery img:hover {
@@ -75,11 +93,12 @@
             max-width: 800px;
         }
         ul li {
-            background: #ffe6cc;
+            background: #fff3e6;
             padding: 10px;
             margin: 10px 0;
             border-radius: 10px;
-            border: 2px solid #ffb74d;
+            border: 2px dashed #ffa64d;
+            font-family: 'Courier New', monospace;
         }
         #contact {
             text-align: center;
@@ -97,21 +116,21 @@
             padding: 10px 20px;
             border: none;
             border-radius: 5px;
-            background-color: #ff8a65;
+            background-color: #ffb366;
             color: white;
             font-size: 16px;
             cursor: pointer;
         }
         #contact button:hover {
-            background-color: #ff7043;
+            background-color: #ff9933;
         }
         footer {
-            background-color: #ffcc80;
-            color: #5d4037;
+            background-color: #ffdd99;
+            color: #4d2800;
             text-align: center;
             padding: 15px;
             margin-top: 20px;
-            border-top: 3px solid #ffb74d;
+            border-top: 3px solid #ffa64d;
         }
         .cat-icon {
             font-size: 24px;
@@ -121,9 +140,17 @@
 </head>
 <body>
     <div id="topbar">
-        <h1>Site da Kipo! 😺</h1>
+        <h1>Bem-vindos ao Mundo da Kipo! 😺</h1>
         <h6>Copyright © Davi 2024</h6>
     </div>
+
+    <nav>
+        <a href="#Conheça a Kipo">Sobre Kipo</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#fanclube">Fã-Clube</a>
+        <a href="#dicas">Dicas para Gatos</a>
+        <a href="#contato">Contato</a>
+    </nav>
 
     <h1>Conheça a Kipo</h1>
     <div class="container">
@@ -134,29 +161,67 @@
         <img src="kipo_2.jpg" alt="Foto de Kipo">
         <p>Ela também ama tirar sonecas à tarde. Mas cuidado! Quando acordada do sono, ela pode ficar um pouco de mau humor (culpa do Davi!).</p>
     </div>
-
-    <h2>Curiosidades 🐾</h2>
+    <div class="container">
+        <img src="kipo_3.jpg" alt="Foto de Kipo brincando">
+        <p>Kipo tem um instinto caçador e adora brincar com bolinhas, penas e até caixas de papelão. Sua brincadeira favorita é perseguir um laser vermelho pela sala.</p>
+    </div>
+    <div class="container">
+        <img src="kipo_4.jpg" alt="Foto de Kipo comendo">
+        <p>Ela ama petiscos! Mas o mais divertido é vê-la tentar roubar um pedaço de frango da mesa (sem sucesso, claro!).</p>
+    </div>
+    <div class="container">
+        <img src="kipo_5.jpg" alt="Foto de Kipo na janela">
+        <p>Quando não está dormindo ou brincando, Kipo gosta de observar o mundo pela janela, especialmente os passarinhos e folhas balançando ao vento.</p>
+    </div>
+    <div class="container">
+        <img src="kipo_6.jpg" alt="Foto de Kipo com brinquedos">
+        <p>Seus brinquedos favoritos são os mais barulhentos da casa. Mas, como uma boa exploradora, até um simples elástico vira diversão garantida!</p>
+    </div>
+    <div class="container">
+        <img src="kipo_7.jpg" alt="Foto de Kipo enrolada em uma coberta">
+        <p>Nos dias frios, Kipo se enrola em cobertores macios e fica parecendo um pequeno burrito felino. Impossível resistir!</p>
+    </div>
+    <div class="container">
+        <img src="kipo_8.jpg" alt="Foto de Kipo junto com um livro">
+        <p>Kipo também é uma grande companheira de leitura. Ela adora deitar ao lado dos livros de Davi enquanto ele lê.</p>
+    </div>
+    <div class="container">
+        <img src="kipo_9.jpg" alt="Foto de Kipo brincando com uma sacola">
+        <p>Sacolas de plástico? Para Kipo, são um parque de diversões! Ela entra, sai, se esconde e até "caça" as sacolas pela casa.</p>
+    </div>
+    <div class="container">
+        <img src="kipo_10.jpg" alt="Foto de Kipo dormindo em posições engraçadas">
+        <p>E por fim, a especialidade da Kipo: dormir nas posições mais engraçadas e inusitadas, garantindo risadas para toda a família!</p>
+    </div>
+    
+<!--
+    <h2>Curiosidades da Kipo 🐾</h2>
     <ul>
         <li>Kipo adora brincar com bolinhas de papel.</li>
         <li>Ela ama carinho na cabeça, mas odeia que toquem na barriga.</li>
         <li>Ela consegue abrir portas se estiverem entreabertas.</li>
         <li>É especialista em roubar lugares quentinhos para dormir.</li>
+        <li>Kipo às vezes mia para a televisão, especialmente quando aparecem outros gatos na tela.</li>
+        <li>Ela adora se esconder em caixas ou lugares apertados para tirar uma soneca.</li>
     </ul>
 
-    <h2>Galeria de Fotos 📸</h2>
+    <h2>Galeria de Fotos da Kipo 📸</h2>
     <div class="gallery">
         <img src="kipo_3.jpg" alt="Kipo na garagem">
         <img src="kipo_4.jpg" alt="Kipo tentando dormir">
         <img src="kipo_5.jpg" alt="Kipo mecânica">
         <img src="kipo_6.jpg" alt="Kipo de lado (Tá linda nessa foto)">
+        <img src="kipo_7.jpg" alt="Kipo brincando com um fio">
+        <img src="kipo_8.jpg" alt="Kipo olhando pela janela">
     </div>
 
-    <h2>Entre em Contato 📨</h2>
+    <h2>Entre em Contato com a Gata Estrela 📨</h2>
     <div id="contact">
         <p>Tem algo para compartilhar sobre a Kipo? Envie uma mensagem!</p>
         <a href="https://www.instagram.com/kipo.a.gata">Acesse nosso Instagram!</a>
+        <p>Ou mande uma foto do seu próprio gatinho para o fã-clube da Kipo! 🐱</p>
     </div>
-
+    //-->
     <footer>
         <p>Obrigado por visitar o site da Kipo! 🐾</p>
     </footer>
